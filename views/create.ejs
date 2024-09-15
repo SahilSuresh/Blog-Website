@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+    
+ <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis container-color">
+    <div class="col-lg-12 px-0 px-4 text-center">
+      <h1 class="display-4 fst-italic">Create Post</h1>
+      <form action="/submit" method="post">
+        <input name="title" type="text" class="feedback-input" placeholder="Enter your blog title." required/>
+        <textarea name="content" class="feedback-input" placeholder="Write your content of your blog here." required></textarea>
+        <input type="submit" class="submit-input" value="Sumbit Blog" style="text-align: center">
+      </form>
+    </div>
+
+</div>
+
+
+<%- include("partials/footer.ejs") %>

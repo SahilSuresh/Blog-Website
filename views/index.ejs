@@ -1,0 +1,49 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container-color p-4 p-md-5 mb-4 rounded text-body-emphasis ">
+    <div class="col-lg-12 px-0  text-center">
+      <h1 class="display-4 fst-italic">Welcome to Reflective</h1>
+      <p class="lead my-3 px-4 text-align-left">Discover a space where self-discovery meets personal growth. At Reflective, we believe that every step toward a better you begins with reflection. Whether you’re seeking inspiration, advice, or a fresh perspective, you’ve come to the right place. <br>
+
+        Explore our carefully crafted articles, each designed to help you grow, reflect, and embrace the journey of becoming your best self. From mastering mindfulness and building confidence to navigating life’s challenges with resilience, our content empowers you to take meaningful steps forward. <br>
+        
+        Join our community of readers who are committed to learning, growing, and living with intention. Wherever you are in your personal growth journey, Reflective is here to support and inspire you every step of the way.
+
+      </p>
+      <p class="lead mb-0"><a href="/create" class="text-body-emphasis fw-bold">Take the first step today—reflect, grow, thrive.</a></p>
+      <hr>
+    </div>
+
+    <div class="container">
+        <% if (posts.length > 0 )  {%>
+        <div class="row">
+            <% posts.forEach(function(post) { %>
+                <div class="col-lg-12 text-center mb-4">
+                    <h2 class="display-4 fst-italic h2-style" id="h2"><%= post.title %></h2>
+                    <p class="lead my-3 pize pTagSize"><%= post.content %></p>
+
+                    <div class="confomr-btn"> 
+                        <a href="/edit/<%= post.id %>" class="btn btn-primary">Edit</a>
+                        <form action="/delete/<%= post.id %>" method="post" style="display: inline;">
+                            <button type="submit" class="btn btn-danger">delete</button>
+                        </form>
+
+                    </div>
+                </div>
+            <% }); %>
+            </div>
+            <% } else { %> <!-- If no posts, show a message -->
+                <h2 class="display-4 fst-italic h2-style" >No posts available yet. Create one!</h2>
+            <% } %>
+            
+        </div>
+            
+                
+                    
+
+</div>
+
+
+
+
+<%- include("partials/footer.ejs") %>

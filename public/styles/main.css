@@ -1,0 +1,172 @@
+* {
+  /* background-color: #A2C2E6; */
+  color: white;
+}
+.header{
+  background-color: #A2C2E6;
+  margin-bottom: 20px;
+}
+.nav-item > a{
+  font-size: 1.2rem;
+  color: #6A5ACD;
+  transition: 0.3s;
+}
+.nav-item > a:hover{
+  color: white
+}
+
+.text-Center{
+    text-align: center;
+}
+.text-align-left {
+    text-align: left;
+}
+.navbar-brand {
+    font-family: Protest Guerrilla;
+    padding: 30px;
+    font-size: 2rem;
+
+}
+
+form {
+    margin-top: 50px;
+  }
+  
+
+.container-color {
+  background: #A2C2E6;
+}
+.container{
+  border: solid 1px #5e9fe9;
+}
+
+.feedback-input {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid gray;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+  }
+  
+.feedback-input:focus {
+    border: 2px solid #3586ff;
+  }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+  }
+  
+  .submit-input{
+    width: 15%;
+    background: #3586ff;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 45%;
+    margin-bottom: 40px;
+
+  }
+  .submit-input:hover {
+    background: #3586ff;
+  }
+
+  hr{
+
+    border: dotted rgb(17, 18, 18) 5px;
+    border-bottom: none;
+    width: 100%;
+    margin: 80px auto;
+}
+  .h2-style {
+    font-size: 2rem;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .confomr-btn {
+    margin: 30px 0px 10px 0px;
+  }
+  
+  
+
+  .confomr-btn .btn{
+    margin-right: 20px;
+    background-color: transparent;
+    transition: 0.3s;
+  }
+  .btn:hover {
+    background-color: red;
+  }
+  .confomr-btn > .btn:hover{
+    background-color: rgb(61, 61, 192);
+  }
+  
+
+  
+
+
+  .conform-btn{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .input-con {
+    width: 5%;
+    text-align: center;
+  }
+
+  .save{
+    border: solid 1px lightgreen;
+    color: black;
+    transition: all, 0.3s;
+    padding-right: 60px;
+  }
+  .save:hover{
+    background: lightgreen;
+    
+  }
+
+  .discard {
+    border: solid 1px rgb(247, 107, 107);
+    color: black;
+    transition: all, 0.3s;
+    padding-right: 60px;
+  }
+
+  .discard:hover{
+    background: rgb(247, 107, 107);
+  }
+
+
+.footer{
+  background-color: #A2C2E6;
+
+  }
+.footer > ul > li{
+  background-color: #A2C2E6;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+
